@@ -8,6 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/*
+
+    The Google page will open with user requested data search.
+
+ */
 public class MainActivity extends AppCompatActivity {
 
     EditText editText;
@@ -18,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         editText = (EditText) findViewById(R.id.editText);
     }
+
+
+    /*
+        on clicking the button using intent will open the google page with passed string using putextra method
+     */
 
     public void onSearchClick(View view){
         Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
